@@ -47,12 +47,12 @@ body {
     gap: 10px;
 }
 
-.left,
-.right {
+.hero .left,
+.hero .right {
     flex: 1;
 }
 
-.left {
+.hero .left {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -121,5 +121,41 @@ button {
         align-self: flex-end;
         font-weight: bold;
         font-size: 25px;
+    }
+}
+
+.call {
+    margin: 128px 256px;
+    padding: 48px 128px;
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .left {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .big {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .small {
+            
+            color: #eeeeee;
+        }
+    }
+    .right {
+        flex: 1;
+    }
+
+    button {
+        border: 2px solid white;
     }
 }
